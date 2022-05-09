@@ -25,7 +25,7 @@ __title__ = "WaveLink"
 __author__ = "PythonistaGuild, EvieePy"
 __license__ = "MIT"
 __copyright__ = "Copyright 2019-2022 (c) PythonistaGuild, EvieePy"
-__version__ = "1.0.0"
+__version__ = "1.2.5"
 
 
 from .backoff import Backoff
