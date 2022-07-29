@@ -84,7 +84,7 @@ class Track(Playable):
 
     def __init__(self, id: str, info: dict):
         super().__init__(id, info)
-        self.title: str = info["title"]
+        self.title: str = info.get('title')
         self.identifier: Optional[str] = info.get("identifier")
         self.uri: Optional[str] = info.get("uri")
         self.author: Optional[str] = info.get("author")
@@ -212,7 +212,7 @@ class SearchableTrack(Track, Searchable):
         if not results:
             raise commands.BadArgument("Could not find any songs matching that query.")
 
-        if isinstance(cls, YouTubePlaylist):
+        if issubclass(cls, YouTubePlaylist):
             return results  # type: ignore
 
         return results[0]
@@ -269,6 +269,9 @@ class YouTubePlaylist(SearchableTrack, Playlist):
         for track_data in data["tracks"]:
             track = YouTubeTrack(track_data["track"], track_data["info"])
             self.tracks.append(track)
+
+    def __str__(self) -> str:
+        return self.name
 
 
 class LocalTrack(SearchableTrack):

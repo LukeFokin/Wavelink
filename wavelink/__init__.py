@@ -25,7 +25,7 @@ __title__ = "WaveLink"
 __author__ = "PythonistaGuild, EvieePy"
 __license__ = "MIT"
 __copyright__ = "Copyright 2019-2022 (c) PythonistaGuild, EvieePy"
-__version__ = "1.2.5"
+__version__ = "1.3.2"
 
 
 from .backoff import Backoff
@@ -37,3 +37,4 @@ from .stats import Stats
 from .tracks import *
 from .queue import *
 from . import abc as abc
+from .filters import *

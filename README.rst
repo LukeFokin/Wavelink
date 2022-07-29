@@ -24,7 +24,7 @@
 
 
 
-Wavelink is a robust and powerful Lavalink wrapper for `Discord.py <https://github.com/Rapptz/discord.py>`_ and certain supported forks.
+Wavelink is a robust and powerful Lavalink wrapper for `disnake <https://github.com/DisnakeDev/disnake>`_ and certain supported forks.
 Wavelink features a fully asynchronous API that's intuitive and easy to use with built in Spotify Support and Node Pool Balancing.
 
 Documentation
@@ -66,7 +66,7 @@ A quick and easy bot example:
 .. code:: py
     
     import wavelink
-    from discord.ext import commands
+    from disnake.ext import commands
 
 
     class Bot(commands.Bot):

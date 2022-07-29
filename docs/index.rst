@@ -1,7 +1,7 @@
 Welcome to WaveLink's Documentation!
 ========================================
 
-WaveLink is a powerful and robust Lavalink wrapper for Discord.py.
+WaveLink is a powerful and robust Lavalink wrapper for disnake.
 
 
 Help and Support
